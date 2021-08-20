@@ -24,8 +24,8 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
     line-height: 150%;
     color: var(--red);
     background: var(--yellow);
@@ -75,46 +75,40 @@ body {
  
   /* changes size of paragraph */
   p {
-    font-size: 16px;
+    font-size: 30px;
+    margin-top: 20px;
   }
   
-  /* makes name underlined */
+  /* makes aboutme underlined */
   section h1 {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: underline;
+    margin-top: 20px;
+    margin-left: 20px;
   }
 
   /* adjusts the sizing of bio-image */
   #bio-image {
-    width: 400px;
-    height: 400px;
     margin-right: 20px;
     margin-top: 20px;
     border: 5px solid var(--dark-blue);
+    
   }
 
   /*  flexbox for about me section */
   .container {
-    display: flex; 
-    width: 100%;
-  }
-
-  /* flex child */
-  .son1 {
-    max-width: 200px;
-    min-width: 150px;
-  }
-
-  /* flex child */
-  .son2 {
-    width: 100%;
-    align-self: center;
-    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
   }
 
   /*  sizing of portfolio heading */
   .wrapper h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     }
     
@@ -125,6 +119,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
     }
 
     /* class for images */
@@ -137,6 +132,23 @@ body {
       opacity: .5;
       transition: .9s;
     }
+
+    span {
+      position: absolute;
+      background-color: var(--white);
+      margin-left: 0;
+      margin-bottom: 32px;
+      padding: 16px;
+      width: 100%;
+      box-sizing: border-box;
+      float: left;
+    }
+    /* contact information */
+    .contact-info h2 {
+      text-decoration: underline;
+      margin-top: 40px;
+    }
+   
     
     /* styles for footer */
     footer {
