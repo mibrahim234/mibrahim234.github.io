@@ -4,10 +4,10 @@
 
 ### The motivation to build this project is to help people understand who I am as a developer. I hope you enjoy viewing this project as much as I enjoyed making it!
 
-![screenshot of project goes here](./assets/)
+![Mohammad Ibrahim Portfolio Screenshot](./assets/images/boom.png)
 
-Link to the GIT repository: 
+Link to the GIT repository: https://github.com/mibrahim234/mibrahim234.github.io
 
-Link to the Live Page: 
+Link to the Live Page: https://mibrahim234.github.io/
 
 ## Credits: Mohammad Ibrahim 
