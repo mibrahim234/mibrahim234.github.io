@@ -15,16 +15,14 @@
   margin: 0;
 }
 
-
-
 /* body */
 body {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 150%;
-    color: var(--red);
-    background: var(--yellow);
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
     background-image: url(./images/sky.jpg);
   }
 
@@ -38,8 +36,6 @@ body {
     display: flex;
     justify-content: space-between;
     background-color:var(--dark);
-    margin-top: 10px;
-  
   }
 
   /* targets nav ul with flex */
@@ -85,7 +81,7 @@ body {
     text-align: center;
   }
 
-  /*  flexbox for about me section */
+  /*  flexbox for about me/contact section */
   .bio {
     display: flex;
     flex-wrap: wrap;
@@ -102,7 +98,7 @@ body {
     
   }
 
-    /* sizing of images */
+    /* sizing of portfolio images */
     .img-area {
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +108,7 @@ body {
     margin-top: 20px;
     }
 
-    /* class for images */
+    /* class for portfolio images */
     .single-img {
      padding: 20px 
     }
@@ -123,6 +119,7 @@ body {
       transition: .9s;
     }
 
+    /* for the captions underneath the pics */
     figure {
       padding: auto;
       margin: auto;
@@ -136,10 +133,20 @@ body {
       text-align: center;
     }
   
+    /* for contact section */
+    .flexbox1 {
+      display: flex;
+      justify-content: space-between;
+      columns: row;
+      background-color:var(--dark);
+      margin-top: 20px;
+    }
+    
     .contact-info {
     padding: 10px;
     font-size: 30px;
     }
+
     /* styles for footer */
     footer {
       padding: 30px;
@@ -149,160 +156,129 @@ body {
     }
     
 
-    /* media queries 
-    @media screen and (min-width: 480px) {
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        line-height: 150%;
-        color: var(--red);
-        background: var(--yellow);
-        background-image: url(./images/sky.jpg);
+    
+    
+    
+    
+
+
+ 
+   @media screen and (max-width: 480px) {
+  .flexbox {
+    text-align: center;
+    flex-direction: column;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #bio-image {
+    margin-left: 10px;
+  }
+  .img-area {
+    margin-left: 10px;
+  }
+  nav {
+    padding: 10px;
+    font-size: 10px;
+    margin-left: 20px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px
+  }
+
+  ul li {
+    margin-right: 20px;
+    list-style-type: none;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .contact-info {
+    font-size: 10px;
+  }
+
+  .flexbox1 {
+      text-align: center;
+      flex-direction: column;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+    footer {
+      text-align: center; 
+      margin-left: 10px;
+    }
+  
+
+    @media screen and (max-width: 768px) {
+      .flexbox {
         text-align: center;
+        flex-direction: column;
+        font-size: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      #bio-image {
+        margin-left: 10px;
       }
 
       p {
+        font-size: 15px; 
+        max-width: 50%;
+        margin-left: 200px;
+        
+      }
+
+      .img-area {
+        margin-left: 10px;
+      }
+      nav {
+        padding: 10px;
+        font-size: 10px;
+        margin-left: 20px;
+      }
+    
+      ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px
+      }
+    
+      ul li {
+        margin-right: 20px;
+        list-style-type: none;
+      }
+    
+      h1 {
         font-size: 20px;
-        margin-top: 20px;
-        margin-left: 20px;
       }
     
-      .flexbox {
-        display: flex
-        justify-content: space-between;
-        background-color: var(--dark);
-      
+      .contact-info {
+        font-size: 10px;
       }
-
-      section h1 {
-        font-size: 30px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: underline;
-        margin-top: 20px;
-        margin-left: 20px;
-      }
-        .single-img {
-          margin-left: 10px;
-          padding-left: 20px;
+    
+      .flexbox1 {
+          text-align: center;
+          flex-direction: column;
+          display: flex;
+          justify-content: space-between;
         }
-    }
-    
-    @media screen and (min-width: 768px) {
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        line-height: 150%;
-        color: var(--red);
-        background: var(--yellow);
-        background-image: url(./images/sky.jpg);
-        text-align: center;
-      }
-
-      p {
-        font-size: 30px;
-        margin-top: 20px;
-        margin-left: 20px;
-      }
-    
-      .flexbox {
-        display: flex
-        justify-content: space-between;
-        background-color: var(--dark);
       
-      }
-
-      section h1 {
-        font-size: 30px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: underline;
-        margin-top: 20px;
-        margin-left: 20px;
-      }
-        .single-img {
+        footer {
+          text-align: center; 
           margin-left: 10px;
-          padding-left: 20px;
         }
-    }
-    
-    @media screen and (min-width: 992px;) {
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        line-height: 150%;
-        color: var(--red);
-        background: var(--yellow);
-        background-image: url(./images/sky.jpg);
-        text-align: center;
       }
-
-      p {
-        font-size: 40px;
-        margin-top: 20px;
-        margin-left: 20px;
-      }
-    
-      .flexbox {
-        display: flex
-        justify-content: space-between;
-        background-color: var(--dark);
       
-      }
-
-      section h1 {
-        font-size: 30px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: underline;
-        margin-top: 20px;
-        margin-left: 20px;
-      }
-        .single-img {
-          margin-left: 10px;
-          padding-left: 20px;
-        }
-    }
-    
+      
+    @media screen and (min-width: 992px) {
+      
     @media screen and (min-width: 1200px) {
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 20px;
-        line-height: 150%;
-        color: var(--red);
-        background: var(--yellow);
-        background-image: url(./images/sky.jpg);
-        text-align: center;
-      }
-
-      p {
-        font-size: 50px;
-        margin-top: 20px;
-        margin-left: 20px;
-      }
-    
-      .flexbox {
-        display: flex
-        justify-content: space-between;
-        background-color: var(--dark);
-      
-      }
-
-      section h1 {
-        font-size: 40px;
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: underline;
-        margin-top: 20px;
-        margin-left: 20px;
-      }
-        .single-img {
-          margin-left: 10px;
-          padding-left: 20px;
-        }
-    } */
-    
+  
