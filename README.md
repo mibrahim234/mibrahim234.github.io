@@ -4,7 +4,7 @@
 
 ### The motivation to build this project is to help people understand who I am as a developer. I hope you enjoy viewing this project as much as I enjoyed making it!
 
-![Mohammad Ibrahim Portfolio Screenshot](./assets/images/shrifty.png)
+![Mohammad Ibrahim Portfolio Screenshot](./assets/images/shrifty.PNG)
 
 Link to the GIT repository: https://github.com/mibrahim234/mibrahim234.github.io
 
