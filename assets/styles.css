@@ -163,7 +163,7 @@ body {
 
 
  
-   @media screen and (max-width: 480px) {
+   @media screen and (max-width: 500px) {
   .flexbox {
     text-align: center;
     flex-direction: column;
@@ -178,12 +178,17 @@ body {
   .img-area {
     margin-left: 10px;
   }
+
   nav {
     padding: 10px;
     font-size: 10px;
     margin-left: 20px;
   }
 
+  p {
+   text-align: center;
+  }
+  
   ul {
     display: flex;
     flex-direction: column;
@@ -209,76 +214,9 @@ body {
       display: flex;
       justify-content: space-between;
     }
-  }
+  
     footer {
       text-align: center; 
       margin-left: 10px;
     }
-  
-
-    @media screen and (max-width: 768px) {
-      .flexbox {
-        text-align: center;
-        flex-direction: column;
-        font-size: 20px;
-        display: flex;
-        justify-content: space-between;
-      }
-    
-      #bio-image {
-        margin-left: 10px;
-      }
-
-      p {
-        font-size: 15px; 
-        max-width: 50%;
-        margin-left: 200px;
-        
-      }
-
-      .img-area {
-        margin-left: 10px;
-      }
-      nav {
-        padding: 10px;
-        font-size: 10px;
-        margin-left: 20px;
-      }
-    
-      ul {
-        display: flex;
-        flex-direction: column;
-        font-size: 20px
-      }
-    
-      ul li {
-        margin-right: 20px;
-        list-style-type: none;
-      }
-    
-      h1 {
-        font-size: 20px;
-      }
-    
-      .contact-info {
-        font-size: 10px;
-      }
-    
-      .flexbox1 {
-          text-align: center;
-          flex-direction: column;
-          display: flex;
-          justify-content: space-between;
-        }
-      
-        footer {
-          text-align: center; 
-          margin-left: 10px;
-        }
-      }
-      
-      
-    @media screen and (min-width: 992px) {
-      
-    @media screen and (min-width: 1200px) {
-  
+   }
